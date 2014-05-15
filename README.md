@@ -1,6 +1,11 @@
 # GoogleMapsAPI
 
-TODO: Write a gem description
+Ruby wrappers around the Google Maps API Web Services.
+
+Supported for now:
+
+* Directions
+* Distance Matrix
 
 ## Installation
 
@@ -18,12 +23,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+GoogleMapsAPI.directions(origin, destination, options = {})
+GoogleMapsAPI.distance_matrix(origins, destinations, options = {})
+```
 
-## Contributing
+For more information, see:
 
-1. Fork it ( https://github.com/[my-github-username]/google_maps_api/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+* [Directions](http://github.com/zavan/google_maps_api-directions)
+* [Distance Matrix](http://github.com/zavan/google_maps_api-distance_matrix)
