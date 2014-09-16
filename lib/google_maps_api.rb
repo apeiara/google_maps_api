@@ -3,11 +3,11 @@ require "google_maps_api/distance_matrix"
 require "google_maps_api/version"
 
 module GoogleMapsAPI
-  def self.directions(origin, destination, options = {})
-    Directions.route(origin, destination, options = {})
+  def self.directions(*args)
+    Directions.route(*args)
   end
 
-  def self.distance_matrix(origins, destinations, options = {})
-    DistanceMatrix.calculate(origins, destinations, options = {})
+  def self.distance_matrix(*args)
+    DistanceMatrix.calculate(*args)
   end
 end
